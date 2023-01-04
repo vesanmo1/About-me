@@ -37,46 +37,38 @@ body {
   color: white;
 }
 
+/* Header __________________________________________________________ */
+
 .container-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 30px;
   background-color: red;
   
   
 }
 
-.about-header__text {
-  display: grid;
-  
-  background-color: blue;
-}
-
 .title-container{
-  display: inline;
-  background-color: greenyellow;
-  vertical-align: top;
+  display:flex;
+ 
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Bebas Neue', cursive;
-  -webkit-text-stroke: 0.1px #EF75FF;
-  color: transparent;
-  font-size: 14vw;
-  line-height : 13vw;
-  text-transform: capitalize;
-  background-color: grey;
+.title{
+  padding:0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: greenyellow;
+ 
 }
 
 .title__highlight {
   -webkit-text-stroke: 0.1px #59FFF1;
 }
 
-.image {
+.about-header__image {
+  margin-left: auto;
+  margin-right: 0;
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 
