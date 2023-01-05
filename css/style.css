@@ -41,7 +41,7 @@ body {
 .container-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 2em;
 }
 
 .about-header__image {
@@ -74,7 +74,7 @@ body {
   font-size: 2em;
   text-transform: uppercase;
   cursor: pointer;
-  transform: translate(0, -5.2rem);
+  transform: translate(0, -5.5rem);
 }
 
 
