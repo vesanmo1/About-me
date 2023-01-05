@@ -5,6 +5,42 @@ body {
   background-color: #111111;
 }
 
+/* Text styles __________________________________________________________ */
+
+*{
+  font-weight: normal;
+}
+
+h1, 
+h4, 
+h5, 
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 12vw;
+  line-height: 11vw;
+  color: transparent;
+  font-family: 'Bebas Neue', cursive;
+  color:#111111;
+  -webkit-text-stroke:3px #EF75FF;
+}
+
+
+h1 span {
+  -webkit-text-stroke:3px #59FFF1;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3vw;
+  color: #59FFF1;
+  background-color: darkblue;
+}
+
 .about-menu{
   background-color: transparent;
   height: 100px;
@@ -14,27 +50,27 @@ body {
   margin-bottom: 3em;
 }
 
-.logo img{
-  width: 45px;
-  height: 30,4px;
-  padding-right: 20px;
-}
+  .logo img{
+    width: 45px;
+    height: 30,4px;
+    padding-right: 20px;
+  }
 
-.menu-items{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  list-style: none;
-  align-items: center;
-}
+  .menu-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+  }
 
-.menu-items li {
-  text-decoration: none;
-  display: block;
-  padding: 0 0 0 40px;
-  color: white;
-}
+    .menu-items li {
+      text-decoration: none;
+      display: block;
+      padding: 0 0 0 40px;
+      color: white;
+    }
 
 /* Header __________________________________________________________ */
 
@@ -53,17 +89,22 @@ body {
   
 }
 
+.title-container {
+  display: inline;
+  background-color: darkblue;
+}
+
 .image {
   width: 90%;
   height: auto;
 }
 
 .description {
-  font-size: 30px;
+  font-size: 1.5vw;
 }
 
 .btn {
-  padding: 20px 90px;
+  padding: 1vw 4vw;
   background-color: #EF75FF;
   border-color: transparent;
   text-decoration: none;
@@ -71,10 +112,10 @@ body {
   cursor: pointer;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.5vw;
   text-transform: uppercase;
   cursor: pointer;
-  transform: translate(0, -5.5rem);
+  transform: translate(0, -5vw);
 }
 
 
