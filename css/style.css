@@ -1,5 +1,5 @@
 body {
-  margin: 0 8vw;
+  margin: 0 8%;
   font-family: 'Roboto', sans-serif;
   color:  white;
   background-color: #111111;
@@ -86,7 +86,7 @@ h5 {
   }
 
 p {
-  font-size: 1vw;
+  font-size: 1.1vw;
   font-weight: 300;
 }
 
@@ -105,7 +105,7 @@ p {
     font-weight: 700;
     margin: 0;
     color: #111111;
-    background: -webkit-linear-gradient(70deg, #59FFF1, #EF75FF);
+    background: -webkit-linear-gradient(-90deg, #59FFF1, #EF75FF);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-stroke: 0.3vw transparent;
@@ -190,7 +190,7 @@ p {
 
 
 
-/* position layout self-description __________________________________________________________ */
+/* layout self-description __________________________________________________________ */
 
 .self-description {
   display: inline-block;
@@ -201,11 +201,65 @@ p {
 
 
 
-/* position layouts rainbow-slogans __________________________________________________________ */
+/* layouts rainbow-slogans __________________________________________________________ */
 
 .about-section__rainbow-slogan {
   display: block;
   align-items: center;
   padding: 0 8%;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
 }
+
+
+
+
+/* layouts section services __________________________________________________________ */
+
+.about-section__services {
+  margin-top: 7%;
+}
+
+.service {
+  display: flex;
+  width: calc(100% * (2 / 3));
+  position: relative;
+  left: calc(100% * (1 / 3));
+  margin-bottom: 10%;
+}
+
+.service:nth-child(even) {
+  flex-direction: row-reverse;
+  position: relative;
+  left: 0;
+}
+
+.service-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% * (1 / 2));
+  height: auto;
+}
+
+.service-image img {
+  height: 30em;
+  width: auto;
+}
+
+.service-description-container {
+  width: calc(100% * (1 / 2));
+  height: 30em;
+  position:relative;
+}
+
+.service-description__left{
+  padding-left: 6vw;
+  padding-right: 1vw;
+}
+
+.service-description__right{
+  padding-right: 6vw;
+  padding-left: 1vw;
+}
+
+
