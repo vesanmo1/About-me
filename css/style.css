@@ -12,7 +12,7 @@ body {
 }
 
 /*
-* ================================ DESKTOP ================================
+* ================================ width 1920px - 1685px ================================
 */
 
 /* Text styles __________________________________________________________ */
@@ -57,9 +57,9 @@ h1 span {
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 45px;
   color: #59fff1;
-  padding-bottom: 1rem;
+  padding: 0;
 }
 /* Text style h2 self-description */
 .self-description__title {
@@ -101,8 +101,12 @@ p {
   font-weight: 300;
 }
 
+.interests__text--bullets {
+  padding-inline-start: 15px;
+}
 .interests__text--bullets li {
   text-decoration: none;
+  padding: 0;
   font-size: 1.4rem;
   font-weight: 300;
 }
@@ -166,7 +170,7 @@ button:focus-visible,
 
 .btn-contact {
   position: absolute;
-  transform: translate(0, -100px);
+  transform: translate(0, -90px);
 }
 
 .btn-form {
@@ -295,6 +299,7 @@ img {
 
 .service-image__container {
   display: flex;
+  margin: 0 50px;
   justify-content: center;
 }
 
@@ -358,7 +363,6 @@ img {
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
 }
 
 .form {
@@ -367,7 +371,7 @@ img {
   justify-content: flex-end;
 }
 
-.text {
+.title__slogan--contact {
   padding-right: 150px;
 }
 
@@ -423,7 +427,7 @@ img {
   justify-content: center;
 }
 .links-container {
-  width: 20%;
+  width: 300px;
   height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -443,10 +447,201 @@ img {
 }
 
 /*
-* ================================ TABLET ================================
+* ================================ width 1685px ================================
 */
 
-/* layouts section services __________________________________________________________ */
+@media screen and (max-width: 1685px) {
+  body {
+    margin: 0 150px 30px 150px;
+  }
+  .btn-form {
+    margin: 0 150px 0;
+  }
+}
 
-@media screen and (max-width: 1126px) {
+/*
+* ================================ width 1587px ================================
+*/
 
+@media screen and (max-width: 1587px) {
+  html {
+    font-size: 80%;
+  }
+  body {
+    margin: 0 200px 30px 200px;
+  }
+  .menu-items li {
+    font-size: 16px;
+  }
+  .btn-form {
+    margin: 0 200px 0;
+  }
+}
+
+/*
+* ================================ width 1450px ================================
+*/
+
+@media screen and (max-width: 1450px) {
+  /* Buttons __________________________________________________________ */
+
+  .btn {
+    padding: 20px 60px;
+  }
+  .btn-contact {
+    position: absolute;
+    transform: translate(0, -80px);
+  }
+  /* Text styles __________________________________________________________ */
+  h1 {
+    font-size: 120px;
+  }
+  h2 {
+    font-size: 37px;
+  }
+  h5 {
+    font-size: 80px;
+    text-align: right;
+  }
+  /* layout self-description __________________________________________________________ */
+  .self-description {
+    display: block;
+    max-width: 100%;
+  }
+  /* layouts rainbow-slogans __________________________________________________________ */
+  .rainbow-slogan {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 200px;
+  }
+}
+
+/*
+* ================================ width 1300px ================================
+*/
+
+@media screen and (max-width: 1300px) {
+  body {
+    margin: 0 150px 30px 150px;
+  }
+  .btn-form {
+    margin: 0 150px 0;
+  }
+}
+
+/*
+* ================================ width 1170px ================================
+*/
+
+@media screen and (max-width: 1170px) {
+  /* Buttons __________________________________________________________ */
+
+  .btn {
+    padding: 15px 50px;
+    font-size: 20px;
+  }
+  .btn-contact {
+    position: absolute;
+    transform: translate(0, -60px);
+  }
+  /* Text styles __________________________________________________________ */
+  h1 {
+    font-size: 100px;
+  }
+  h5 {
+    font-size: 60px;
+  }
+  .header-text__description {
+    font-size: 18px;
+  }
+  .self-description__text {
+    font-size: 22px;
+  }
+  /* Navbar __________________________________________________________ */
+
+  .menu-items {
+    display: none;
+  }
+  /* layout sections __________________________________________________________________ */
+  .about-section {
+    padding-top: 100px;
+  }
+
+  .about-section__items {
+    padding-top: 30px;
+  }
+  /* layouts section services __________________________________________________________ */
+  .about-section__services {
+    padding: 0 100px;
+  }
+  .service {
+    width: 100%;
+    position: static;
+    margin-top: 100px;
+  }
+
+  .service-image {
+    max-height: 400px;
+    width: auto;
+  }
+
+  .service-image__container {
+    display: flex;
+    margin: 0;
+    justify-content: left;
+  }
+  .service-image__container--left {
+    justify-content: right;
+  }
+}
+
+/*
+* ================================ width 1050px ================================
+*/
+
+@media screen and (max-width: 1050px) {
+  body {
+    margin: 0 75px 30px 75px;
+  }
+  .btn-form {
+    margin: 0 75px 0;
+  }
+  /* rrss links size change __________________________________________________________ */
+  .links-container {
+    width: 275px;
+  }
+  /* layouts section services __________________________________________________________ */
+  .about-section__services {
+    padding: 0 50px;
+  }
+}
+
+/*
+* ================================ width 1170px ================================
+*/
+
+@media screen and (max-width: 20px) {
+  /* Text styles __________________________________________________________ */
+  h1 {
+    font-size: 80px;
+  }
+  h5 {
+    font-size: 45px;
+    margin: 0;
+  }
+  .header-text__description {
+    font-size: 16px;
+  }
+  .self-description__text {
+    font-size: 19px;
+  }
+
+  /* layout sections __________________________________________________________________ */
+  .about-section {
+    padding-top: 80px;
+  }
+
+  .about-section__items {
+    padding-top: 25px;
+  }
+}
