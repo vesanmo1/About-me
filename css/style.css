@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  margin: 0 8% 2% 8%;
+  margin: 0 200px 30px 200px;
   max-width: 1920px;
   color: white;
   background-color: #111111;
@@ -57,7 +57,7 @@ h1 span {
 }
 
 h2 {
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   color: #59fff1;
   padding-bottom: 1rem;
 }
@@ -65,10 +65,6 @@ h2 {
 .self-description__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-}
-/* Padding bottom h2 services section */
-.title__slogan--services {
-  padding-bottom: 2rem;
 }
 
 h3 {
@@ -85,8 +81,9 @@ h4 {
 
 h5 {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 5rem;
+  font-size: 4.8rem;
   font-weight: 700;
+  margin: 50px 0;
   text-align: center;
   color: #111111;
   background: -webkit-linear-gradient(70deg, #59fff1, #ef75ff);
@@ -100,6 +97,12 @@ h5 span {
 }
 
 p {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.interests__text--bullets li {
+  text-decoration: none;
   font-size: 1.4rem;
   font-weight: 300;
 }
@@ -122,23 +125,23 @@ p {
   background: -webkit-linear-gradient(-90deg, #59fff1, #ef75ff);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-stroke: 0.07rem transparent;
+  -webkit-text-stroke: 0.3rem transparent;
 }
 
 /* Buttons __________________________________________________________ */
 
 .btn {
-  padding: 0.7em 2.8em;
+  padding: 25px 80px;
   background-color: #ef75ff;
   border: none;
   outline: inherit;
   text-decoration: none;
-  border-radius: 0.3em;
+  border-radius: 5px;
   color: #111111;
   cursor: pointer;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
-  font-size: 1.8em;
+  font-size: 2rem;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -158,18 +161,18 @@ button:active,
 
 button:focus-visible,
 .btn:focus-visible {
-  box-shadow: 0 0 0 0.3em #111111, 0 0 0 0.4em #ef75ff;
+  box-shadow: 0 0 0 8px #111111, 0 0 0 10px #ef75ff;
 }
 
 .btn-contact {
   position: absolute;
-  transform: translate(0, -3em);
+  transform: translate(0, -100px);
 }
 
 .btn-form {
   position: absolute;
   right: 0;
-  margin: 0 8% 0;
+  margin: 0 200px 0;
 }
 
 /* Images __________________________________________________________ */
@@ -183,17 +186,16 @@ img {
 
 .about-menu {
   background-color: transparent;
-  height: 5.5em;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 3em;
+  margin-bottom: 40px;
 }
 
 .logo {
   width: 45px;
-  height: 30px, 4px;
-  padding-right: 20px;
+  height: 30px;
 }
 
 .menu-items {
@@ -239,7 +241,7 @@ img {
 .header-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2em;
+  gap: 50px;
 }
 
 .header-image {
@@ -250,7 +252,11 @@ img {
 /* layout sections __________________________________________________________________ */
 
 .about-section {
-  padding-top: 7em;
+  padding-top: 150px;
+}
+
+.about-section__items {
+  padding-top: 50px;
 }
 
 /* layout self-description __________________________________________________________ */
@@ -258,17 +264,20 @@ img {
 .self-description {
   display: inline-block;
   align-items: left;
-  max-width: 50%;
+  max-width: calc(100% * (1 / 2));
 }
 
 /* layouts rainbow-slogans __________________________________________________________ */
 
 .rainbow-slogan {
   align-items: center;
-  padding: 0 8%;
 }
 
 /* layouts section services __________________________________________________________ */
+
+.about-section__services {
+  padding-bottom: 50px;
+}
 
 .service {
   display: grid;
@@ -276,7 +285,7 @@ img {
   width: calc(100% * (2 / 3));
   position: relative;
   left: calc(100% * (1 / 3));
-  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .service-image {
@@ -317,31 +326,31 @@ img {
 
 /* layout section images__________________________________________________________ */
 
-.images {
+.about-section__items--images {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  gap: 1vw;
+  gap: 20px;
 }
 
 .images-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 1vw;
+  gap: 20px;
 }
 
 /* layouts section 'my approach' & 'how I work'__________________________________________________________ */
 
-.about-section__items {
+.about-section__items--text {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-  gap: 4vw;
+  grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
+  gap: 70px;
 }
 
 .pair-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4vw;
+  gap: 70px;
 }
 
 /* layout contact__________________________________________________________ */
@@ -349,7 +358,7 @@ img {
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2vw;
+  gap: 50px;
 }
 
 .form {
@@ -359,7 +368,7 @@ img {
 }
 
 .text {
-  margin-right: 10vw;
+  padding-right: 150px;
 }
 
 .form input,
@@ -375,9 +384,9 @@ img {
 .form input[type="text"],
 .form input[type="email"],
 .form textarea {
-  padding: 1.5vw;
-  margin-bottom: 1.2vw;
-  border-radius: 0.3vw;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
   border: 1px solid #59fff1;
   background-color: transparent;
   font-family: "Roboto", sans-serif;
@@ -386,7 +395,8 @@ img {
 }
 
 .form textarea {
-  height: 14vh;
+  height: 120px;
+  width: auto;
 }
 
 .form input[type="text"]:focus,
@@ -417,7 +427,7 @@ img {
   height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3vw;
+  gap: 50px;
 }
 
 .links-container a {
@@ -439,51 +449,4 @@ img {
 /* layouts section services __________________________________________________________ */
 
 @media screen and (max-width: 1126px) {
-  .service {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-    gap: 4vw;
-    margin-bottom: 7vw;
-  }
 
-  .service:nth-child(even) {
-    flex-direction: row-reverse;
-    position: relative;
-    left: 0;
-  }
-
-  .service-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% * (1 / 2));
-    height: auto;
-  }
-
-  .service-image img {
-    height: 30vw;
-    width: auto;
-  }
-
-  .service-description-container {
-    width: calc(100% * (1 / 2));
-    height: 30vw;
-    position: relative;
-    max-width: 45vw;
-  }
-
-  .service-description__text {
-    font-size: 1.4vw;
-  }
-
-  .service-description__left {
-    padding-left: 6vw;
-    padding-right: 1vw;
-  }
-
-  .service-description__right {
-    padding-right: 6vw;
-    padding-left: 1vw;
-  }
-}
