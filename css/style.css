@@ -819,4 +819,16 @@ img {
   h1 {
     font-size: 85px;
   }
+
+  .about-section__services {
+    padding-bottom: 0;
+  }
+
+  .service {
+    margin-top: 50px;
+  }
+
+  .about-section__items {
+    padding-top: 25px;
+  }
 }
