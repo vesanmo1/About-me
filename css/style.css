@@ -5,8 +5,8 @@ html {
 }
 
 body {
-  margin: 0 200px 30px 200px;
-  max-width: 1920px;
+  margin: 0 auto 30px auto;
+  max-width: 1520px;
   color: white;
   background-color: #111111;
 }
@@ -47,7 +47,6 @@ h1 {
   font-size: 12rem;
   line-height: 1;
   color: transparent;
-  font-family: "Bebas Neue", cursive;
   color: #111111;
   -webkit-text-stroke: 0.15rem #ef75ff;
 }
@@ -130,6 +129,10 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 0.3rem transparent;
+}
+.nowrap-h2 {
+  font-family: "Bebas Neue", cursive;
+  white-space: nowrap;
 }
 
 /* Buttons __________________________________________________________ */
@@ -447,7 +450,7 @@ img {
 }
 
 /*
-* ================================ width 1685px ================================
+* ================================ max-width 1685px ================================
 */
 
 @media screen and (max-width: 1685px) {
@@ -460,7 +463,7 @@ img {
 }
 
 /*
-* ================================ width 1587px ================================
+* ================================ max-width 1587px ================================
 */
 
 @media screen and (max-width: 1587px) {
@@ -479,7 +482,7 @@ img {
 }
 
 /*
-* ================================ width 1450px ================================
+* ================================ max-width 1450px ================================
 */
 
 @media screen and (max-width: 1450px) {
@@ -496,7 +499,7 @@ img {
   h1 {
     font-size: 120px;
   }
-  h2 {
+  .self-description__title {
     font-size: 37px;
   }
   h5 {
@@ -517,7 +520,7 @@ img {
 }
 
 /*
-* ================================ width 1300px ================================
+* ================================ max-width 1300px ================================
 */
 
 @media screen and (max-width: 1300px) {
@@ -530,7 +533,7 @@ img {
 }
 
 /*
-* ================================ width 1170px ================================
+* ================================ max-width 1170px ================================
 */
 
 @media screen and (max-width: 1170px) {
@@ -596,7 +599,7 @@ img {
 }
 
 /*
-* ================================ width 1050px ================================
+* ================================ max-width 1050px ================================
 */
 
 @media screen and (max-width: 1050px) {
@@ -617,31 +620,203 @@ img {
 }
 
 /*
-* ================================ width 1170px ================================
+* ================================ max-width 900px ================================
 */
 
-@media screen and (max-width: 20px) {
+@media screen and (max-width: 900px) {
   /* Text styles __________________________________________________________ */
   h1 {
     font-size: 80px;
+    -webkit-text-stroke: 1.5px #ef75ff;
   }
-  h5 {
-    font-size: 45px;
-    margin: 0;
+  h1 span {
+    -webkit-text-stroke: 1.5px #59fff1;
   }
   .header-text__description {
     font-size: 16px;
   }
-  .self-description__text {
-    font-size: 19px;
+  h2 {
+    font-size: 37px;
+  }
+  .self-description__title {
+    font-size: 30px;
+  }
+  h5 {
+    font-size: 45px;
+    margin: 0;
+    -webkit-text-stroke: 3px transparent;
+  }
+  .service-description__number {
+    -webkit-text-stroke: 3px transparent;
+  }
+  /* layouts section services __________________________________________________________ */
+  .about-section__services {
+    padding: 0;
+  }
+}
+
+/*
+* ================================ max-width 800px ================================
+*/
+
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0 auto 30px auto;
+    padding: 0 30px;
+    max-width: 500px;
+  }
+
+  /* Text styles __________________________________________________________ */
+
+  h1 {
+    font-size: 120px;
+  }
+  h5 {
+    text-align: left;
+  }
+  .header-text__description {
+    font-size: 18px;
+  }
+
+  /* Buttons __________________________________________________________ */
+  .header-btn {
+    margin: 30px 0;
+    height: 60px;
+  }
+
+  .btn {
+    display: block;
+    margin: 0;
+    padding: 18px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .btn-contact {
+    position: static;
+    transform: translate(0, 0);
+  }
+
+  .btn-form {
+    position: static;
+    transform: translate(0, 0);
+  }
+
+  /* Navbar __________________________________________________________ */
+
+  .about-menu {
+    height: 100px;
+    margin-bottom: 0;
+  }
+
+  /* Header __________________________________________________________ */
+
+  .header-container {
+    display: block;
+  }
+
+  .header-image {
+    margin: 0;
   }
 
   /* layout sections __________________________________________________________________ */
+
   .about-section {
-    padding-top: 80px;
+    padding-top: 75px;
   }
 
   .about-section__items {
-    padding-top: 25px;
+    padding-top: 50px;
+  }
+
+  /* layouts rainbow-slogans __________________________________________________________ */
+
+  .rainbow-slogan {
+    display: block;
+    padding-left: 0;
+  }
+
+  /* layouts section services __________________________________________________________ */
+
+  .about-section__services {
+    padding-bottom: 50px;
+  }
+
+  .service {
+    display: block;
+  }
+
+  .service-image {
+    max-height: 400px;
+  }
+
+  .service-image__container {
+    display: flex;
+    margin: 0 50px;
+    justify-content: center;
+  }
+
+  .service-description__container {
+    padding-top: 40px;
+  }
+
+  /* layouts section 'my approach' & 'how I work'__________________________________________________________ */
+
+  .about-section__items--text {
+    display: block;
+  }
+
+  .pair-container {
+    display: block;
+  }
+
+  /* layout contact__________________________________________________________ */
+
+  .contact-grid {
+    display: block;
+  }
+  .about-section__interests {
+    margin-bottom: 40px;
+  }
+  .title__slogan--contact {
+    padding-right: 0;
+  }
+}
+
+/*
+* ================================ max-width 590px ================================
+*/
+
+@media screen and (max-width: 590px) {
+  body {
+    margin: 0 auto 30px auto;
+    padding: 0 30px;
+    max-width: 350px;
+  }
+  /* layout section images__________________________________________________________ */
+
+  .about-section__items--images {
+    display: block;
+  }
+
+  .images-container {
+    display: block;
+  }
+}
+
+/*
+* ================================ max-width 410px ================================
+*/
+
+@media screen and (max-width: 410px) {
+  body {
+    margin: 0 auto 30px auto;
+    padding: 0 30px;
+    max-width: 290px;
+  }
+
+  h1 {
+    font-size: 85px;
   }
 }
