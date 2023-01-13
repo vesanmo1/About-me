@@ -111,7 +111,7 @@ p {
 }
 
 .header-text__description {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -620,10 +620,10 @@ img {
 }
 
 /*
-* ================================ max-width 900px ================================
+* ================================ max-width 935px ================================
 */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 935px) {
   /* Text styles __________________________________________________________ */
   h1 {
     font-size: 80px;
@@ -656,10 +656,10 @@ img {
 }
 
 /*
-* ================================ max-width 800px ================================
+* ================================ max-width 850px ================================
 */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   body {
     margin: 0 auto 30px auto;
     padding: 0 30px;
